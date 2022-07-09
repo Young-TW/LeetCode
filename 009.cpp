@@ -1,48 +1,17 @@
-#include <iostream>
-using namespace std;
-int main(){
-    int x = 1213123;
-    // int length
-    int y = 1;
-    int xLength = 0;
-    while(x > y){
-        y = 10 * y;
-        xLength++;
-    }
-    cout << xLength;
-    string strX = to_string(x);
-    bool wordSingle = strX.length()%2;
-    /*
-    bool wordSingle;
-
-    if(strX.length()%2 == 1){
-        wordSingle = true;
-    }else{
-        wordSingle = false;
-    }
-    */
-    
-    if(wordSingle == true){
-        int current = 0;
-        while(current < (xLength/2)){
-            if(){
-                break;
-            }
-            // 0 1 2 3 4
-            // 1 0 2 0 1
-            current++;
+class Solution {
+public:
+    bool isPalindrome(int x) {
+        if(x<0){
+            return false;
         }
-    }else{
-        int current = 0;
-        while(current < (xLength/2)){
-            if(){
-                break;
-            }
-            // 0 1 2 3
-            // 1 0 0 1
-            current++;
+        long long int reversed_num = 0, remainder, reg;
+        reg = x;
+        while(x != 0) {
+            remainder = x % 10;
+            reversed_num = reversed_num * 10 + remainder;
+            x /= 10;
+            cout << reversed_num << endl;
         }
+        return reg == reversed_num;
     }
-    
-   // cout << wordSingle;
-}
+};
