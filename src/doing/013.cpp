@@ -8,28 +8,29 @@ public:
         char flag = 'M';
         int result = 0;
         while (!s.empty()) {
-            if (s.front() == flag) {
-                s.erase(s.front());
-            } else if (s.front() == 'C' && flag == 'D') {
+            char target = s[0];
+            if (target == flag) {
+                s.erase(target);
+            } else if (target == 'C' && flag == 'D') {
                 result += 400;
-                s.erase(s.front());
-            } else if (s.front() == 'C' && flag == 'M') {
+                s.erase(target);
+            } else if (target == 'C' && flag == 'M') {
                 result += 900;
-                s.erase(s.front());
-            } else if (s.front() == 'X' && flag == 'L') {
+                s.erase(target);
+            } else if (target == 'X' && flag == 'L') {
                 result += 40;
-                s.erase(s.front());
-            } else if (s.front() == 'X' && flag == 'C') {
+                s.erase(target);
+            } else if (target == 'X' && flag == 'C') {
                 result += 90;
-                s.erase(s.front());
-            } else if (s.front() == 'I' && flag == 'V') {
+                s.erase(target);
+            } else if (target == 'I' && flag == 'V') {
                 result += 4;
-                s.erase(s.front());
-            } else if (s.front() == 'I' && flag == 'X') {
+                s.erase(target);
+            } else if (target == 'I' && flag == 'X') {
                 result += 9;
-                s.erase(s.front());
+                s.erase(target);
             } else {
-                switch (s.front()) {
+                switch (target) {
                     case 'I':
                         result += 1;
                         break;
@@ -53,8 +54,8 @@ public:
                         break;
                 }
 
-                flag = s.front();
-                s.erase(s.front());
+                flag = target;
+                s.erase(0, 1);
             }
         }
 
