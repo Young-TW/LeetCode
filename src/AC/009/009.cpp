@@ -10,7 +10,7 @@ public:
             remainder = x % 10;
             reversed_num = reversed_num * 10 + remainder;
             x /= 10;
-            cout << reversed_num << endl;
+            std::cout << reversed_num << std::endl;
         }
         return reg == reversed_num;
     }
