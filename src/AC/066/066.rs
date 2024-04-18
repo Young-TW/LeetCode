@@ -5,16 +5,16 @@ impl Solution {
         }
 
         let mut digits_copy = digits.clone();
-        for i in 0..digits_cpoy.len() {
-            let index = digits_copy.len() - 1 - i;
-            if digits_copy[index] == 9 {
-                digits_copy[index] = 0;
+        for i in (0..digits_copy.len()).rev() {
+            if digits_copy[i] == 9 {
+                digits_copy[i] = 0;
             } else {
-                digits_copy[index] += 1;
+                digits_copy[i] += 1;
                 return digits_copy;
             }
         }
 
         digits_copy.insert(0, 1);
+        digits_copy
     }
 }
