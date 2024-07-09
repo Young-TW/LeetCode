@@ -1,5 +1,3 @@
-// Leetcode: https://leetcode.com/problems/roman-to-integer/
-
 #include <string>
 
 class Solution {

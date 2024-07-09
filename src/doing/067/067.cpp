@@ -1,5 +1,3 @@
-// LeetCode: https://leetcode.com/problems/add-binary/
-
 #include <string>
 
 class Solution {
