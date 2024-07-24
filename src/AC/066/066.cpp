@@ -1,5 +1,3 @@
-// LeetCode: https://leetcode.com/problems/plus-one/
-
 #include <vector>
 
 class Solution {
