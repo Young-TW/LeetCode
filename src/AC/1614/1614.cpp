@@ -1,4 +1,5 @@
-// LeetCode: https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/?envType=daily-question&envId=2024-04-04
+// LeetCode:
+// https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/?envType=daily-question&envId=2024-04-04
 
 #include <string>
 

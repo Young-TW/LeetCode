@@ -1,6 +1,6 @@
 impl Solution {
     pub fn tribonacci(n: i32) -> i32 {
-        let dp:Vec<i32> = vec![0, 1, 1];
+        let dp: Vec<i32> = vec![0, 1, 1];
         if n < 3 {
             return dp[n as usize];
         }

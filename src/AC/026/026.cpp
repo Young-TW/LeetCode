@@ -7,7 +7,7 @@ public:
 
         int flag = nums[0];
         int count = 1;
-        for (int i=1; i<nums.size();) {
+        for (int i = 1; i < nums.size();) {
             if (nums[i] == flag) {
                 nums.erase(nums.begin() + i);
             } else {
